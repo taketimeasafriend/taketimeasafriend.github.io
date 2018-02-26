@@ -1,0 +1,1331 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next muse" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #DC143C; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #00d200, 0 0 5px     #00d200; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #00d200;    /*上边框颜色*/
+        border-left-color: #f00;    /*左边框颜色*/
+    }
+</style>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="绘画原理," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon_books.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="“ Perspective is something that brings math and geometry to mind. ”">
+<meta name="keywords" content="绘画原理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何凭想象画画（二）·透视和3D作图">
+<meta property="og:url" content="https://taketimeasafriend.github.io/2017/10/25/drawing/如何凭想象画画-2透视和3D作图/index.html">
+<meta property="og:site_name" content="时间的朋友">
+<meta property="og:description" content="“ Perspective is something that brings math and geometry to mind. ”">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025052911_It4pg1_toushi3d.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025053709_XkLjjG_PERSPECTIVE-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025055102_NNNhyV_how-to-draw-perspective-intro.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025055956_Fb4k9L_how-to-draw-perspective-what-is-2d.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025055956_qi4LlY_how-to-draw-perspective-what-is-3d.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025060959_MRME9q_how-to-draw-perspective-1d-to-2d.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025061459_GQLdn8_how-to-draw-perspective-2d-to-3d.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025062130_iHCUgt_how-to-draw-perspective-2d-to-3d-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171028232911_z7Q6f4_how-to-draw-perspective-why-distortion.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171028234513_84udHK_how-to-draw-perspective-why-distortion-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171028235142_r3G23y_how-to-draw-perspective-why-distortion-3.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171028235751_ULLVt8_how-to-draw-perspective-why-distortion-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171028235907_10IW8U_how-to-draw-perspective-drawing-demo-1.gif">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029005455_AwMxU8_how-to-draw-perspective-why-distortion-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029010909_gkKAs5_how-to-draw-perspective-why-distortion-6-b.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029012201_Ifp62k_how-to-draw-perspective-why-distortion-7-b.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029012849_13fqfa_how-to-draw-perspective-why-distortion-8.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029013212_9HHbMu_how-to-draw-perspective-drawing-demo-2.gif">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029013950_HOYYHZ_how-to-draw-perspective-mistake.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029023324_g7uhxb_how-to-draw-perspective-exercise-1-template-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029023724_wdsU0b_how-to-draw-perspective-exercise-1-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029023735_Wh6tYi_how-to-draw-perspective-exercise-1-6.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029024001_Jitfgy_how-to-draw-perspective-exercise-1-7.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029024208_zMQJTh_how-to-draw-perspective-exercise-1-8.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029024433_c4W3Lc_how-to-draw-perspective-exercise-1-9.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029032239_COUFqs_how-to-draw-perspective-exercise-1-10.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029032245_jK2iRL_how-to-draw-perspective-exercise-1-11.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029032251_CvyBbg_how-to-draw-perspective-exercise-1-12.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029032256_psbO6k_how-to-draw-perspective-exercise-1-13.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029032424_cr4vUH_how-to-draw-perspective-exercise-1-14.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029033753_jxtv6E_how-to-draw-perspective-exercise-1-15.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029033758_fGkfGD_how-to-draw-perspective-exercise-1-16.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029034057_Yki03K_how-to-draw-perspective-exercise-1-18.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029034231_yZEHAZ_how-to-draw-perspective-exercise-1-19.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171029043624_z8V8qx_how-to-draw-perspective-exercise-1-19.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032355_c7fZ0D_how-to-draw-perspective-ellipsoid.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032625_KcELQn_how-to-draw-perspective-exercise-1-20.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_o9qbqr_how-to-draw-perspective-ellipsoid-3-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_yEIy6r_how-to-draw-perspective-ellipsoid-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_RPUWu5_how-to-draw-perspective-ellipsoid-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_MQgyNw_how-to-draw-perspective-ellipsoid-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_xGqDpc_how-to-draw-perspective-exercise-1-21.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_e1UTrc_how-to-draw-perspective-exercise-1-22.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_Y38A3W_how-to-draw-perspective-exercise-1-23.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030033959_xmuImT_how-to-draw-perspective-exercise-1-24.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030035129_WhAF8p_how-to-draw-perspective-exercise-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_m544DH_how-to-draw-perspective-exercise-3-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_IZQ8di_how-to-draw-perspective-exercise-3-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_Z6nJUm_how-to-draw-perspective-exercise-3-3.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_SmjnhB_how-to-draw-perspective-exercise-3-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_g89uth_how-to-draw-perspective-exercise-3-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_7Yhvbc_how-to-draw-perspective-exercise-3-6.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_PQOwcU_how-to-draw-perspective-exercise-3-7.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_yUD6s2_how-to-draw-perspective-exercise-3-8.gif">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_os5WYK_how-to-draw-perspective-exercise-3-9.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_AP2irj_how-to-draw-perspective-exercise-3-10.gif">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_3c528n_how-to-draw-perspective-exercise-4-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_SBYBOZ_how-to-draw-perspective-exercise-4-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_QNhKvB_how-to-draw-perspective-exercise-4-3.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_54K9mS_how-to-draw-perspective-exercise-4-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_hvRMyV_how-to-draw-perspective-exercise-4-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_QXvEsy_how-to-draw-perspective-exercise-4-6.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_FO0A8M_how-to-draw-perspective-exercise-4-7.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030050627_Eo0rgz_how-to-draw-perspective-exercise-4-8.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030051010_OH6LEM_how-to-draw-perspective-exercise-6-b-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030051010_Q8YBSp_how-to-draw-perspective-exercise-6-b-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_lKPlZr_how-to-draw-perspective-exercise-6-b-3.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_tK5RfH_how-to-draw-perspective-exercise-6-b-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_Q9AMX9_how-to-draw-perspective-exercise-6-b-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_xu9AkY_how-to-draw-perspective-exercise-6-b-6.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030054057_Yjd8xn_how-to-draw-perspective-exercise-7-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030055646_iDbvQk_how-to-draw-perspective-exercise-8-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030055745_4QVkrp_how-to-draw-perspective-example.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030062752_jpOUbX_WX20171030-062653@2x.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030062753_scNd9V_WX20171030-062727@2x.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171030062753_DekEiO_WX20171030-062711@2x.jpeg">
+<meta property="og:updated_time" content="2017-10-30T18:13:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何凭想象画画（二）·透视和3D作图">
+<meta name="twitter:description" content="“ Perspective is something that brings math and geometry to mind. ”">
+<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/20171025052911_It4pg1_toushi3d.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://taketimeasafriend.github.io/2017/10/25/drawing/如何凭想象画画-2透视和3D作图/"/>
+
+
+
+
+
+  <title> 如何凭想象画画（二）·透视和3D作图 | 时间的朋友 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-87405681-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c854619f060bceda20bd4b4b29ce99f3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1261612368&web_id=1261612368" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">时间的朋友</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">把琐碎的时间堆砌成一个伟大的生命。</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-clock-o"></i> <br />
+            
+            时间轴
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th-list"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-thumb-tack"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-museum">
+          <a href="/university" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-university"></i> <br />
+            
+            博物馆
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-test">
+          <a href="/test" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-flask"></i> <br />
+            
+            实验室
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user-plus"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            站内搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="请输入在本站搜索的关键字..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    
+      <div id="idhyt-surprise-ball">
+  <div id="idhyt-surprise-ball-animation">
+    <!--xxxxxxx xxx xxxxx -->
+    <!--why you are here? -->
+    <span id="layer0Go" class="drag">w</span>
+    <span id="layer1Go" class="drag">h</span>
+    <span id="layer2Go" class="drag">y</span>
+    <span id="layer3Go" class="drag"></span>
+    <span id="layer4Go" class="drag">y</span>
+    <span id="layer5Go" class="drag">o</span>
+    <span id="layer6Go" class="drag">u</span>
+    <span id="layer7Go" class="drag">a</span>
+    <span id="layer8Go" class="drag">r</span>
+    <span id="layer9Go" class="drag">e</span>
+    <span id="layer10Go" class="drag">h</span>
+    <span id="layer11Go" class="drag">e</span>
+    <span id="layer12Go" class="drag">r</span>
+    <span id="layer13Go" class="drag">e</span>
+    <span id="layer14Go" class="drag">?</span>
+    <span id="layer15Go" class="drag ball"></span>
+  </div>
+</div>
+
+    
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://taketimeasafriend.github.io/2017/10/25/drawing/如何凭想象画画-2透视和3D作图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喵小哥">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="时间的朋友">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何凭想象画画（二）·透视和3D作图
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-25T00:46:21+08:00">
+                2017-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/绘画/" itemprop="url" rel="index">
+                    <span itemprop="name">绘画</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025052911_It4pg1_toushi3d.jpeg" width="480">“ Perspective is something that brings math and geometry to mind. ”</blockquote>
+
+<a id="more"></a>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>接着<a href="http://51world.win/2017/10/22/drawing/%E5%A6%82%E4%BD%95%E5%87%AD%E6%83%B3%E8%B1%A1%E7%94%BB%E7%94%BB-%EF%BC%88%E7%BB%83%E4%B9%A0%EF%BC%89%E7%B2%BE%E7%A1%AE/" title="上一篇" target="_blank" rel="noopener">上一篇</a>继续翻译，本篇内容是关于3D透视的，相信一般人都没有这些知识体系吧。那看看本文。<a href="https://www.sketchbook.com/blog/how-to-draw-from-imagination-freehand-perspective-and-drawing-in-3d/" title="这是原文地址" target="_blank" rel="noopener">这是原文地址</a>。</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote><em>这篇是“如何凭想象画画”系列的延续。如果你是完美主义者，那就把整个系列都读下来吧。</em></blockquote><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025053709_XkLjjG_PERSPECTIVE-1.jpeg" alt=""><br><strong>透视</strong>，是用大脑把数学和几何联系起来。这似乎和你平时喜欢的漫画等作品没啥关系，但是透视可不仅仅只和建筑或者车辆相关 —— 它适用于所有的三维物体，当然包括所有生物。运用透视，画在纸面上的东西看起来会有立体的感觉。当你掌握了透视，你可以从任意角度画你想画的动物的任何姿势。这就是我今天要教的：给你的画增添另一个维度，从此再也不单调枯燥。<br><blockquote>理解透视原理是一回事，但是能把这原理运用到你的徒手画中是另一回事。你如果经常做下面的练习，你将会很自然的画出有透视关系的图。理论容易被忘记，可是我们形成的条件反射可不会。</blockquote>
+
+<p>⚠️警告：这是个复杂的课题，你需要仔细认真，不要偷懒 —— 只有当你完全理解了之后才会越来越容易。这个过程中，你可能需要反复阅读体会。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025055102_NNNhyV_how-to-draw-perspective-intro.jpeg" alt="" title="没有透视规则，这些画画不出来。"></p>
+<h3 id="第二个技能：透视"><a href="#第二个技能：透视" class="headerlink" title="第二个技能：透视"></a>第二个技能：透视</h3><p>让我们从一个简单问题开始：一张纸是二维的，长和宽组成了一个平面。一个二维空间只能放置平面。如果你生活在二维空间里，那你只能向上、向下、向左、向右。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025055956_Fb4k9L_how-to-draw-perspective-what-is-2d.jpeg" alt=""><br>第三个维度是高度。它可以让你在无数个平面组成的空间内旋转，就像书的一页纸似的。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025055956_qi4LlY_how-to-draw-perspective-what-is-3d.jpeg" alt=""><br>很明显，难题是一张纸只是一个平面，如何让你画在上面的城堡有3D效果？</p>
+<p>让我们退一步。如果你在一维空间尝试画个二维的东西，则不能显示出它的完整形式（只剩下长度），只能通过旋转去看另一个维度。你不能同时看见长和宽。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025060959_MRME9q_how-to-draw-perspective-1d-to-2d.jpeg" alt="" title="一维空间看到的矩形只是一条线，无论如何旋转。"><br>同样，在二维空间里画三维物体是一样的道理。你不能完全看到它的长宽高。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025061459_GQLdn8_how-to-draw-perspective-2d-to-3d.jpeg" alt=""><br>3D物体在我们脑海里，其实也是2D的。我们无法看见三维物体的全貌 —— 能看到的只是一系列各个不同角度的视图。当你拿着一个3D物体，你只能通过旋转来看到它全貌。就像上面1D-2D的例子，我们没有看到面，只是看到了线条。因此，我们看3D物体只看到了面，所以我们只是画一个角度下的2D画面。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171025062130_iHCUgt_how-to-draw-perspective-2d-to-3d-2.jpeg" alt="" title="我们只能理解不同的2D视图。"></p>
+<h3 id="为什么物体会呈现不同的透视图"><a href="#为什么物体会呈现不同的透视图" class="headerlink" title="为什么物体会呈现不同的透视图"></a>为什么物体会呈现不同的透视图</h3><p>其实，“我们只能看到2D视图”的说法并不完全正确 —— 我们能，只是它们总是呈现为2D视图。我们把这种现象叫做“失真” —— 必须减少一个维度来为另一个维度提供空间。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171028232911_z7Q6f4_how-to-draw-perspective-why-distortion.jpeg" alt="" title="绿色的面被挤压，进而为蓝色的面（被挤压的更厉害）腾出空间。"><br>这种“失真”很有规律。其实，我们能从一个三维物体的旋转中很容易想象出一个完整的3D图像（更确切的说，是一个2D视图）。我们的大脑知道透视规则 —— 但并不是说我们非常了解透视原理。所以，下面我们逐个分解来看。</p>
+<p>看个简单的模型：当你围绕某个维度（这里是红色）旋转时，我们说它（红色）没有被损坏。而另外两个（绿色和蓝色）交换了长度和位置。一步一步地分析下面的插图，理解下这个过程。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171028234513_84udHK_how-to-draw-perspective-why-distortion-2.jpeg" alt=""><br>原理很简单：在旋转的过程中，一个维度变成了另一个维度。我们总是能看到一个完整的二维平面或者两个二维平面正在转化。上面的例子是 蓝色 ➡️ 绿色 ➡️ 蓝色。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171028235142_r3G23y_how-to-draw-perspective-why-distortion-3.jpeg" alt="" title="旋转后的立方体看起来就像两个矩形组成，因为你只能看见“边”和“面”"><br>看到一个面的全部当然很好，但在绘画中我们不可能一次把所有面都画出来。不过，上面的例子，你只用三条线就能描绘清楚。这些线条的变化和整个面是同步的：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171028235751_ULLVt8_how-to-draw-perspective-why-distortion-4.jpeg" alt="" title="你能看懂线条怎么转化的么？只有红色线不变，因为它是轴。"><br>很显然，我们可以这样描绘上图。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171028235907_10IW8U_how-to-draw-perspective-drawing-demo-1.gif" alt=""><br>这个原理在任何物体上都适用。这个变换和维度的长度成正比。所以，较长的维度的面比较短的转化得更快。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029005455_AwMxU8_how-to-draw-perspective-why-distortion-5.jpeg" alt=""><br>这部分只讲了两个2D平面，比较容易。如果你想看到第三个维度呢？</p>
+<p>现实中，我们可以将一个物体绕任何一个轴旋转；而在绘画中，我们最好沿某个维度的轴旋转 —— 这样更有规律，更容易预测。举个例子：如果我们想看到物体的前面、顶面和侧面，我们可以向下旋转露出顶面（面1，绕着“宽度”这个轴），然后向右旋转露出侧面（面2，绕着“高度”这个轴）。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029010909_gkKAs5_how-to-draw-perspective-why-distortion-6-b.jpeg" alt="" title="旋转1的时候高度变短了，但以它为轴旋转2时长度不变。"><br>上面这个例子里，面和面的转化很容易理解。但是，这次它们变化的不仅仅是长度 —— 两个不同维度（如：长和宽）的夹角也改变了！<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029012201_Ifp62k_how-to-draw-perspective-why-distortion-7-b.jpeg" alt=""><br>让我们进一步分析。直角仅仅适用于一个完整的未“失真”的面。绿线（在宽度维度上）长度越短，它越接近旋转的轴。它的方向指向后来的第三个面（蓝）。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029012849_13fqfa_how-to-draw-perspective-why-distortion-8.jpeg" alt="" title="看到的面越多，它的夹角角度越大 —— 相反，则越小。"><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029013212_9HHbMu_how-to-draw-perspective-drawing-demo-2.gif" alt="" title="你画的不是立方体 —— 画的仅仅是有特殊长度和角度的线条，只是我们大脑识别出来的是个旋转的立方体。"><br>在三维视图里，角度非常重要。虽然画角度时我们比较主观，但是千万不要小觑：要么一个直角两个面；要么三个面没有直角。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029013950_HOYYHZ_how-to-draw-perspective-mistake.jpeg" alt="" title="所谓的“一点透视”在现实中根本无意义。"></p>
+<font color="#f33" size="2" face="黑体">（译者注：红叉❌下的立方体是不是高中学立体几何时经常画？其实它是错误的！感兴趣的可参考<a href="https://wenku.baidu.com/view/ad450e3667ec102de2bd8919.html" title="这里" target="_blank" rel="noopener">这里</a>和<a href="https://www.zhihu.com/question/37172125" title="这里" target="_blank" rel="noopener">这里</a>）</font>
+
+<h3 id="搞懂透视"><a href="#搞懂透视" class="headerlink" title="搞懂透视"></a>搞懂透视</h3><p>整个原理太冗长了，我们如何在绘画中快速运用它们呢？掌握透视我分两部分：原理 和 练习。原理上面已经说过了，但是很容易被遗忘。我们需要通过练习来真正的掌握它们。这些练习会训练你的大脑去预测通过旋转带来的变化。</p>
+<h4 id="练习1：立方体"><a href="#练习1：立方体" class="headerlink" title="练习1：立方体"></a>练习1：立方体</h4><p>开始之前，你需要知道，我们画透视图不是以下面这种方式。这仅仅是一个小练习（你必须做一次），会让你知道在旋转中真正发生了什么。这种方法可能也会用来解决存疑的透视图，但也仅仅是一个小工具，而不是徒手绘画的方法。开始前，我们需要先准备一个研究用的模版坐标（最好准确点），如下图：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029023324_g7uhxb_how-to-draw-perspective-exercise-1-template-1.jpeg" alt=""><br>看得懂吧？准备好它后，我将给你展示如何利用它画出任何角度的视图。</p>
+<p>我们先假设想绕着x轴旋转一点点，那么y轴有多长呢？当然很长，因为它离原始图很近。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029023724_wdsU0b_how-to-draw-perspective-exercise-1-5.jpeg" alt=""><br>因为绕着x轴旋转的，所以x长度不会变。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029023735_Wh6tYi_how-to-draw-perspective-exercise-1-6.jpeg" alt=""><br>那么z呢？它离完整长度很远，所以应该很短。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029024001_Jitfgy_how-to-draw-perspective-exercise-1-7.jpeg" alt=""><br>好了，现在我们有3条线了，因为是个立方体，我们需要添加各个面。将这一小段z复制到y轴的两端。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029024208_zMQJTh_how-to-draw-perspective-exercise-1-8.jpeg" alt=""><br>现在你就能描出这个立方体的轮廓了。侧面已经露出了一部分，正面消失了一部分，和你预期的一样。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029024433_c4W3Lc_how-to-draw-perspective-exercise-1-9.jpeg" alt=""><br>绕着一个轴旋转比较容易，绕两个轴原理也适用。假设我们想往下再往右（<strong>顺序有关系：先绕y轴后绕x轴</strong>）旋转。画个点，已示中心。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029032239_COUFqs_how-to-draw-perspective-exercise-1-10.jpeg" alt=""><br>z轴肯定有个角度，我们很容易找到它（点到点连线）：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029032245_jK2iRL_how-to-draw-perspective-exercise-1-11.jpeg" alt=""><br>有了角度，我们需要添加线了。当然，z很短，但是要确保它在角度线上。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029032251_CvyBbg_how-to-draw-perspective-exercise-1-12.jpeg" alt=""><br>同理，画y。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029032256_psbO6k_how-to-draw-perspective-exercise-1-13.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029032424_cr4vUH_how-to-draw-perspective-exercise-1-14.jpeg" alt=""><br>x轴是我们 <strong>第二条旋转轴</strong>，所以它的角度不变，很容易确定。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029033753_jxtv6E_how-to-draw-perspective-exercise-1-15.jpeg" alt=""><br>而且，x轴受第一次旋转影响，短了点。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029033758_fGkfGD_how-to-draw-perspective-exercise-1-16.jpeg" alt=""><br>这次你画出了骨架，可你借此画出内部的中心面…<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029034057_Yki03K_how-to-draw-perspective-exercise-1-18.jpeg" alt=""><br>… 然后画出外面的壳子。没错，我们完成了，看到了顶面、侧面和正面。和我们预期的一样！<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029034231_yZEHAZ_how-to-draw-perspective-exercise-1-19.jpeg" alt=""><br>如果你仔细的完成了练习，你应该抓住了里面的技巧。为了进一步巩固，你这次 <strong>先向右再向下</strong> 旋转。这次你没必要画出所有的指示线，越快越好。这是关键。</p>
+<p>别太关心准确度，别用尺子丈量，而是用你的手。我们关心的是原理，而不是完美的效果 —— 如果你是个完美主义者，你应该用电子设备！在这里，我们要的只是直觉。</p>
+<p><font color="#f33" size="2" face="黑体">（译者注：下面这个是我画的效果。尺寸虽然太不标准，但是要确保y轴水平不动！观察异同。）</font><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171029043624_z8V8qx_how-to-draw-perspective-exercise-1-19.jpeg" alt=""></p>
+<h4 id="练习2：椭圆体"><a href="#练习2：椭圆体" class="headerlink" title="练习2：椭圆体"></a>练习2：椭圆体</h4><p>上面用的立方体的例子，在我们绘画中不经常用。另一个更常见的例子是椭圆体：一个由3个椭圆形的面形成的物体。看起来复杂？其实，它比立方体简单多了，你只需要画3个椭圆，而不是3个中心面和外面的“盒子”！<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032355_c7fZ0D_how-to-draw-perspective-ellipsoid.jpeg" alt=""><br>原理和上个例子一模一样。只不过是把中心面换成了椭圆。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032625_KcELQn_how-to-draw-perspective-exercise-1-20.jpeg" alt=""><br>虽然不用画外面的“盒子”，但是还是需要画每个椭圆的轴。一个椭圆形在任何透视角度下都还是一个椭圆，但是轴的角度会不同。当角度变化时怎么画呢？<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_o9qbqr_how-to-draw-perspective-ellipsoid-3-1.jpeg" alt=""><br>记住两点：首先，<strong>角度越锐，外弧线越曲。</strong> 可以这样理解：2条轴在拉伸或挤压着角度。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_yEIy6r_how-to-draw-perspective-ellipsoid-2.jpeg" alt=""><br>第二，<strong>凸起的部分靠近长轴。</strong><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_RPUWu5_how-to-draw-perspective-ellipsoid-4.jpeg" alt=""><br>所以，透视下椭圆呈下图所示。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030032700_MQgyNw_how-to-draw-perspective-ellipsoid-5.jpeg" alt=""><br>试着用上面的原理完成下面的椭圆体。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_xGqDpc_how-to-draw-perspective-exercise-1-21.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_e1UTrc_how-to-draw-perspective-exercise-1-22.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030033604_Y38A3W_how-to-draw-perspective-exercise-1-23.jpeg" alt=""><br>只要画出了3个椭圆就简单了。沿着轮廓勾出整个椭圆体即可。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030033959_xmuImT_how-to-draw-perspective-exercise-1-24.jpeg" alt=""><br>椭圆体模型在绘画中很常用，所以多加练习。同时，注意加快速度，不要关心精确度。我们后面会越画越快。</p>
+<h4 id="练习3：测试你的想象力"><a href="#练习3：测试你的想象力" class="headerlink" title="练习3：测试你的想象力"></a>练习3：测试你的想象力</h4><p>你已经学会了透视的基本画法，这次我们需要扔掉坐标模版。随意的、快速的画出各种角度的物体，假想有中心的辅助线但是不要画出来。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030035129_WhAF8p_how-to-draw-perspective-exercise-2.jpeg" alt="" title="这是例子 —— 不要照抄，不然就没意义了。"></p>
+<h4 id="练习4：自由绘制"><a href="#练习4：自由绘制" class="headerlink" title="练习4：自由绘制"></a>练习4：自由绘制</h4><p>用以上方法画透视图，虽然很强大，但是却不实用。毕竟，当我们画动物时，身体由各种变化的部分组成，如果拆成很多独立的部分分别绘制肯定很乱。咳，当你知道它长啥样时，没必要这么复杂。</p>
+<p>假设，你要画个类似椭圆状的东西（很常见的情形），先描出轮廓。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_m544DH_how-to-draw-perspective-exercise-3-1.jpeg" alt=""><br>然后标记出可见的各个面：侧面大部分可见，顶部的一部分，还有一点前面。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_IZQ8di_how-to-draw-perspective-exercise-3-2.jpeg" alt=""><br>假象它已经是个完整的椭圆体。标记出“每一面”的“最远点”。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_Z6nJUm_how-to-draw-perspective-exercise-3-3.jpeg" alt=""><br>大概在中心画出每个维度上的轴，末端不要超过轮廓（记住，轮廓可以改动），角度由刚才的点确定。如果这一步对你来说有难度，那就返回去继续之前的练习。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_SmjnhB_how-to-draw-perspective-exercise-3-4.jpeg" alt="" title="长度和角度都是基于原理的，不要瞎画。"><br>画出整个椭圆体，外接于第一步的轮廓。（或者最后是这样的，因为第一步的轮廓只是一个参考）<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_g89uth_how-to-draw-perspective-exercise-3-5.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_7Yhvbc_how-to-draw-perspective-exercise-3-6.jpeg" alt=""><br>确保这个角度下，图中的椭圆可见。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_PQOwcU_how-to-draw-perspective-exercise-3-7.jpeg" alt=""><br>快速演示。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_yUD6s2_how-to-draw-perspective-exercise-3-8.gif" alt=""><br>试着尝试各个角度，直到你觉得没啥难题。试着找到自己最快最方便的方式！<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_os5WYK_how-to-draw-perspective-exercise-3-9.jpeg" alt="" title="⚠️：即使你画的没错，有些视图看上去还是很怪异。别担心，适应一下。"><br>同样的方法也适合画立方体：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030040124_AP2irj_how-to-draw-perspective-exercise-3-10.gif" alt=""></p>
+<h3 id="自由透视"><a href="#自由透视" class="headerlink" title="自由透视"></a>自由透视</h3><p>理解透视原理是一回事，但是能把这原理运用到你的徒手画中是另一回事。你如果经常做下面的练习，你将会很自然的画出有透视关系的图。理论容易被忘记，可是我们形成的条件反射可不会。</p>
+<h4 id="练习1：组合体"><a href="#练习1：组合体" class="headerlink" title="练习1：组合体"></a>练习1：组合体</h4><p>一切3D物体都遵循前面的原理。虽然很多复杂的形式似乎无法用我们的模型勾勒出来。我们来尝试一些灵活的形式。</p>
+<p>首先，随意轻轻地画一些曲线。（我画的很重，是为了你看的更清楚）<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_3c528n_how-to-draw-perspective-exercise-4-1.jpeg" alt=""><br>在每条线的端点出画一些形状（2D和3D），保证大概准确就行。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_SBYBOZ_how-to-draw-perspective-exercise-4-2.jpeg" alt=""><br>在线条上快速画一些线圈。（判断容积的参照）<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_QNhKvB_how-to-draw-perspective-exercise-4-3.jpeg" alt=""><br>现在它们看起来像一个个3D的东西了。再给它们画上“脊柱”。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_54K9mS_how-to-draw-perspective-exercise-4-4.jpeg" alt=""><br>这些东西都是由前面的形状随着脊柱旋转组成。它们也可能迅速减小。画出它们可见部分的轮廓，间隙不要太窄。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_hvRMyV_how-to-draw-perspective-exercise-4-5.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_QXvEsy_how-to-draw-perspective-exercise-4-6.jpeg" alt=""><br>画出整个轮廓，只要你觉得合适，线条越多越好。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030043512_FO0A8M_how-to-draw-perspective-exercise-4-7.jpeg" alt=""><br>附加练习：现在已经很好的显示了3D模型。如果你想让它更加完整，添加些影阴。<strong>影阴和视角密切相关</strong>。别担心，只有当你模型还没具象化时画影阴才显得困难。对于现在这些模型，你能很容易用交叉线表示出影阴，进而看出哪里是顶部，哪里是底部。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030050627_Eo0rgz_how-to-draw-perspective-exercise-4-8.jpeg" alt="" title="简单的影阴，可以让草图瞬间逼格提升。"></p>
+<h4 id="练习2：动态旋转"><a href="#练习2：动态旋转" class="headerlink" title="练习2：动态旋转"></a>练习2：动态旋转</h4><p>你已经知道了立方体旋转后的状态怎么画。有时候，一些体系中的旋转状态也很重要，当你偏差大的时候会破坏整体一致性。现在我们基于之前的基础上，学习一下“动态”旋转。</p>
+<p>比如打开状态的门（1）、盒子（2）和嘴（3）。你可以尝试其他模型，但是这三个例子展示效果最好。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030051010_OH6LEM_how-to-draw-perspective-exercise-6-b-1.jpeg" alt=""><br>找到旋转的轴和你想旋转的面上一点（把这个点看作一个把手）。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030051010_Q8YBSp_how-to-draw-perspective-exercise-6-b-2.jpeg" alt=""><br>旋转就是围绕着一根轴（紫色表示），过程中会形成一个圆或椭圆（你已经会画它们了）。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_lKPlZr_how-to-draw-perspective-exercise-6-b-3.jpeg" alt=""><br>任意选个你想旋转的角度，用一根线条表示出方向。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_tK5RfH_how-to-draw-perspective-exercise-6-b-4.jpeg" alt=""><br>这条线和轴（轴的长度当然不会变了）这两个维度可构成一个面。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_Q9AMX9_how-to-draw-perspective-exercise-6-b-5.jpeg" alt=""><br>第三个维度就是旋转轨迹上那一小段。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030052258_xu9AkY_how-to-draw-perspective-exercise-6-b-6.jpeg" alt=""></p>
+<h4 id="练习3：实物透视分析"><a href="#练习3：实物透视分析" class="headerlink" title="练习3：实物透视分析"></a>练习3：实物透视分析</h4><p>光知道这些立方体、椭圆体是不行的 —— 透视技巧是死的，我们需要利用它看看实物的透视是怎样的。鱼、蛇等都是很好的上手教材。当你画它们时觉得不太麻烦时，你就可以画处于任何姿势的任何动物了（只要别太拘泥于特殊的细节）。这是个有趣的练习，让你真实地运用透视原理。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030054057_Yjd8xn_how-to-draw-perspective-exercise-7-1.jpeg" alt="" title="这些例子中你也可以练习画影阴。"></p>
+<h4 id="练习4：创造！"><a href="#练习4：创造！" class="headerlink" title="练习4：创造！"></a>练习4：创造！</h4><p>本系列文章的目的是让你掌握如何凭想象画画，就快了！最后一步是画一些复杂的结构，可以找些参照物。我的教程有这些（建议 <a href="https://www.sketchbook.com/blog/how-to-draw-horses-details-step-by-step/" title="怎样画马" target="_blank" rel="noopener">怎样画马</a> 和 <a href="https://www.sketchbook.com/blog/how-to-draw-foxes-step-by-step-tutorial-sketchbook/" title="怎样画狐狸" target="_blank" rel="noopener">怎样画狐狸</a>），你也可以找些照片来画（虽然没有步骤教学！）。<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030055646_iDbvQk_how-to-draw-perspective-exercise-8-1.jpeg" alt=""></p>
+<h3 id="（差不多）大功告成！"><a href="#（差不多）大功告成！" class="headerlink" title="（差不多）大功告成！"></a>（差不多）大功告成！</h3><p>下次，我们将学习如何从想象中用简单的形式（你学过的那些）来构建一些有意义的东西。</p>
+<p>形成条件反射需要时间，你需要经常练，让它成为你的本能。上面的练习没必要都做，如果有必要可针对性练习。这是一个复杂的话题，很多艺术家都因为害怕失败本身而失败了。透视原理不能忘记，只有两种可能：你要么知道你为什么这么画，要么就是瞎猜。不论多难，不要放弃 —— 我敢保证它是值得的！<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030055745_4QVkrp_how-to-draw-perspective-example.jpeg" alt="" title="你知道这幅画中如何运用的透视原理么？"></p>
+<h3 id="你准备好了吗？"><a href="#你准备好了吗？" class="headerlink" title="你准备好了吗？"></a>你准备好了吗？</h3><p>当你完成了本文内容，看剩下的部分：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>·</strong> <a href="http://51world.win/2017/10/30/drawing/%E5%A6%82%E4%BD%95%E5%87%AD%E6%83%B3%E8%B1%A1%E7%94%BB%E7%94%BB-3%E6%91%86%E8%84%B1%E4%B8%B4%E6%91%B9/" title="如何凭想象画画（三）·摆脱临摹" target="_blank" rel="noopener">如何凭想象画画（三）·摆脱临摹</a></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>透视还没怎么练习，放几张随笔，对自己以资鼓励：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030062752_jpOUbX_WX20171030-062653@2x.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030062753_scNd9V_WX20171030-062727@2x.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20171030062753_DekEiO_WX20171030-062711@2x.jpeg" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #A52A2A; font-size:18px;">
+        < - 完 - >
+        </div>
+    
+</div>
+
+      
+    </div>
+    
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/weigonghao.jpg" alt="喵小哥 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>上面是一个挤牙膏式的微公号。</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div> <span> - </span> 坚持分享  鼓励创作 <span> - </span> </div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/Wechat.png" alt="喵小哥 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/Alipay.png" alt="喵小哥 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+      
+        <div id="bitcoin" style="display: inline-block">
+          <img id="bitcoin_qr" src="/uploads/bitcoin.png" alt="喵小哥 Bitcoin"/>
+          <p>比特币打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      喵小哥
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://taketimeasafriend.github.io/2017/10/25/drawing/如何凭想象画画-2透视和3D作图/" title="如何凭想象画画（二）·透视和3D作图">https://taketimeasafriend.github.io/2017/10/25/drawing/如何凭想象画画-2透视和3D作图/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/绘画原理/" rel="tag"><i class="fa fa-thumb-tack" aria-hidden="true"></i> 绘画原理</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/22/drawing/如何凭想象画画-（练习）精确/" rel="next" title="如何凭想象画画（练习）·精确">
+                <i class="fa fa-chevron-left"></i> 如何凭想象画画（练习）·精确
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/30/drawing/如何凭想象画画-3摆脱临摹/" rel="prev" title="如何凭想象画画（三）·摆脱临摹">
+                如何凭想象画画（三）·摆脱临摹 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_cqq"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_douban"></a>
+
+	<a class="jiathis_button_fb"></a>
+	<a class="jiathis_button_twitter"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_linkedin"></a>
+
+	<a class="jiathis_button_ydnote"></a>
+	<a class="jiathis_button_fav"></a>
+	<a class="jiathis_button_copy"></a>
+	<a class="jiathis_button_tieba"></a>
+
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore: false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="喵小哥"/>
+          <p class="site-author-name" itemprop="name">喵小哥</p>
+          
+            <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">102</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <a href="/categories/index.html">
+                
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+                
+                </a>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <a href="/tags/index.html">
+                
+                <span class="site-state-item-count">92</span>
+                <span class="site-state-item-name">标签</span>
+                
+                </a>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/taketimeasafriend" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://wangwei.party" target="_blank" title="Resume">
+                  
+                    <i class="fa fa-fw fa-user-secret"></i>
+                  
+                  Resume
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element  links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              拓展学习
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zhibimo.com/explore/books/" title="·知笔墨" target="_blank">·知笔墨</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://web.archive.org/web/20111228123747/http://www.lixiaolai.com/" title="·李笑来" target="_blank">·李笑来</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://macshuo.com/" title="·池建强" target="_blank">·池建强</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.geekonomics10000.com/" title="·万维钢" target="_blank">·万维钢</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mindhacks.cn/" title="·刘未鹏" target="_blank">·刘未鹏</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ruanyifeng.com/blog/" title="·阮一峰" target="_blank">·阮一峰</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.yinwang.org/" title="·王&emsp;垠" target="_blank">·王&emsp;垠</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.devtang.com/" title="·唐&emsp;巧" target="_blank">·唐&emsp;巧</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        <div class="hissoryCounter">
+          <div class="hissoryCounterChild1">-历史访问次数-<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3214334&c=9643315" alt="AmazingCounters.com"></div>
+          <div class="hissoryCounterChild2">-历史访问人数-<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3214333&c=9643312" alt="AmazingCounters.com"></div>
+        </div>
+
+
+        <!-- Start of StatCounter Code for Default Guide -->
+        <script type="text/javascript">
+        var sc_project=11440510;
+        var sc_invisible=1;
+        var sc_security="9bd592ab";
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" +
+        scJsHost+
+        "statcounter.com/counter/counter.js'></"+"script>");
+        </script>
+        <noscript><div class="statcounter"><a title="site stats"
+        href="http://statcounter.com/" target="_blank"><img
+        class="statcounter"
+        src="//c.statcounter.com/11440510/0/9bd592ab/1/" alt="site
+        stats"></a></div></noscript>
+        <!-- End of StatCounter Code for Default Guide -->
+        <a href="http://statcounter.com/p11440510/?guest=1" style="color: #00FF7F; font-size: 12px;">
+        More Data
+        </a>
+
+
+        
+
+
+      </section>
+
+      
+        <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第二个技能：透视"><span class="nav-number">2.1.</span> <span class="nav-text">第二个技能：透视</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么物体会呈现不同的透视图"><span class="nav-number">2.2.</span> <span class="nav-text">为什么物体会呈现不同的透视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搞懂透视"><span class="nav-number">2.3.</span> <span class="nav-text">搞懂透视</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#练习1：立方体"><span class="nav-number">2.3.1.</span> <span class="nav-text">练习1：立方体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习2：椭圆体"><span class="nav-number">2.3.2.</span> <span class="nav-text">练习2：椭圆体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习3：测试你的想象力"><span class="nav-number">2.3.3.</span> <span class="nav-text">练习3：测试你的想象力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习4：自由绘制"><span class="nav-number">2.3.4.</span> <span class="nav-text">练习4：自由绘制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自由透视"><span class="nav-number">2.4.</span> <span class="nav-text">自由透视</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#练习1：组合体"><span class="nav-number">2.4.1.</span> <span class="nav-text">练习1：组合体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习2：动态旋转"><span class="nav-number">2.4.2.</span> <span class="nav-text">练习2：动态旋转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习3：实物透视分析"><span class="nav-number">2.4.3.</span> <span class="nav-text">练习3：实物透视分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习4：创造！"><span class="nav-number">2.4.4.</span> <span class="nav-text">练习4：创造！</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（差不多）大功告成！"><span class="nav-number">2.5.</span> <span class="nav-text">（差不多）大功告成！</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你准备好了吗？"><span class="nav-number">2.6.</span> <span class="nav-text">你准备好了吗？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+        <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
+  
+  <span itemprop="copyrightYear">2018-02-24</span>
+  <span class="with-love">
+    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a href="http://wangwei.party/">喵小哥</a></span>
+</div>
+
+<div class="theme-info">
+  <span class="post-count">当前博客共156.8k字</span>
+  <div class="powered-by"></div>
+</div>
+
+<div class="powered-by">
+  每天进步一点点
+</div>
+
+<div class="theme-info">
+  去另一条
+  <a class="theme-link" href="https://51world.wordpress.com/">
+    时间轴
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+  <div id="hexo-helper-live2d">
+      <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+  </div>
+    <style>
+      #live2dcanvas{
+      	-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+        position: fixed;
+        width: 150px;
+        height: 300px;
+        opacity:1;
+        
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -20px;
+      }
+	  
+    </style>
+    <script src="/live2d/device.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+	  if(typeof(device) != "undefined"){
+        if(device.mobile()){
+          
+        }else{
+          document.write('<script type="text/javascript" src="/live2d/script.js"><\/script>');
+          document.write('<script>loadlive2d("live2dcanvas", "/live2d/assets/hijiki.model.json", 0.5)<\/script>');
+        }
+	  }else{
+        document.write('<script type="text/javascript" src="/live2d/script.js"><\/script>');
+        document.write('<script>loadlive2d("live2dcanvas", "/live2d/assets/hijiki.model.json", 0.5)<\/script>');    
+	  }
+    })();
+    </script>
+
+</body>
+</html>
