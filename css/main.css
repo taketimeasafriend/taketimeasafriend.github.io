@@ -1814,21 +1814,21 @@ h6 {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
-  webkit-transition: 0.8s all;
-  moz-transition: 0.8s all;
-  ms-transition: 0.8s all;
-  transition: 0.8s all;
+  webkit-transition: 1.8s all;
+  moz-transition: 1.8s all;
+  ms-transition: 1.8s all;
+  transition: 1.8s all;
 }
 .site-author-image:hover {
   background-color: #fff;
-  webkit-transform: rotate(360deg) scale(1.2);
-  moz-transform: rotate(360deg) scale(1.2);
-  ms-transform: rotate(360deg) scale(1.2);
-  -webkit-transform: rotate(360deg) scale(1.2);
-  -moz-transform: rotate(360deg) scale(1.2);
-  -ms-transform: rotate(360deg) scale(1.2);
-  -o-transform: rotate(360deg) scale(1.2);
-  transform: rotate(360deg) scale(1.2);
+  webkit-transform: rotateY(360deg) scale(1.2);
+  moz-transform: rotateY(360deg) scale(1.2);
+  ms-transform: rotateY(360deg) scale(1.2);
+  -webkit-transform: rotateY(360deg) scale(1.2);
+  -moz-transform: rotateY(360deg) scale(1.2);
+  -ms-transform: rotateY(360deg) scale(1.2);
+  -o-transform: rotateY(360deg) scale(1.2);
+  transform: rotateY(360deg) scale(1.2);
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1910,7 +1910,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff21a;
+  background: #54ff61;
 }
 .links-of-blogroll {
   margin-top: 10px;
