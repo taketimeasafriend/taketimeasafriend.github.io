@@ -119,18 +119,18 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="DNS （Domain Name System）原理入门。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825004523_dAD8pN_wangluogailun-8.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825011950_63vEG7_wangluogailun-9.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825013903_LMojNg_wangluogailun-10.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825014249_m7hk8R_wangluogailun-11-1.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825014750_4yg1gD_wangluogailun-12.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825015529_hhWe8j_wangluogailun-13.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825022839_9foJPe_wangluogailun-14-2.jpeg">
-<meta property="og:updated_time" content="2017-11-19T15:47:41.000Z">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082401.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082402.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082403.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082404.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082405.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082406.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082407.jpeg">
+<meta property="og:updated_time" content="2019-02-19T16:59:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络概论（二）">
 <meta name="twitter:description" content="DNS （Domain Name System）原理入门。">
-<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825004523_dAD8pN_wangluogailun-8.jpeg">
+<meta name="twitter:image" content="http://51world.win/pic_flow/2017/2017082401.jpeg">
 
 
 
@@ -502,7 +502,7 @@
       
 
       
-        <blockquote class="blockquote-center"><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825004523_dAD8pN_wangluogailun-8.jpeg" width="480" alt="DNS"><br><strong>DNS</strong> （Domain Name System）原理入门。<br></blockquote>
+        <blockquote class="blockquote-center"><br><img src="http://51world.win/pic_flow/2017/2017082401.jpeg" width="480" alt="DNS"><br><strong>DNS</strong> （Domain Name System）原理入门。<br></blockquote>
 
 <a id="more"></a>
 <h2 id="什么是-DNS"><a href="#什么是-DNS" class="headerlink" title="什么是 DNS"></a><strong>什么是 DNS</strong></h2><p>由于 IP 不容易记忆，所以我们偏好让用户用域名(Domain Name)来访问服务器，但是数据包要传递必须用到 IP 。因此我们用 <a href="https://zh.wikipedia.org/zh-cn/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F" title="域名系统" target="_blank" rel="noopener">域名系统</a> 来做 Domain Name 和 IP 的转换。</p>
@@ -523,19 +523,19 @@
 <li>Google 的 <code>8.8.8.8</code></li>
 </ul>
 <p>在 Mac 中的设定：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825011950_63vEG7_wangluogailun-9.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082402.jpeg" alt=""></p>
 <p>查询的流程：</p>
-<blockquote><br>先从客户端偏好的 DNS 开始查询；如果 DNS 找不到纪录，则该 DNS 会从<a href="https://zh.wikipedia.org/zh-cn/%E6%A0%B9%E7%BD%91%E5%9F%9F%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8" title="根域名服务器" target="_blank" rel="noopener">根域名服务器</a>(root nameserver)开始查询，直到找到负责该域名的 DNS 服务器为止 … 在第一次查询后，那台客户端偏好的 DNS 就会缓存起来。<br><blockquote><br>举例：<br>查询 <code>test.51world.win</code> 时，如果客户端偏好的 DNS 没有纪录；<br>就会去问根域名服务器(root nameserver) <code>.win</code> 域名是谁管理的，它会回答出负责 <code>.win</code> 的 <code>nameserver</code>；<br>然后该 DNS 再去问 <code>.win</code> 的 <code>nameserver</code>， <code>51world.win</code> 是哪台 DNS 负责的；<br>再进一步，然后再去问那一台 <code>test.51world.win</code> 对应的 IP 是什么。<br></blockquote><br></blockquote>
+<blockquote>先从客户端偏好的 DNS 开始查询；如果 DNS 找不到纪录，则该 DNS 会从<a href="https://zh.wikipedia.org/zh-cn/%E6%A0%B9%E7%BD%91%E5%9F%9F%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8" title="根域名服务器" target="_blank" rel="noopener">根域名服务器</a>(root nameserver)开始查询，直到找到负责该域名的 DNS 服务器为止 … 在第一次查询后，那台客户端偏好的 DNS 就会缓存起来。<br><blockquote>举例：<br>查询 <code>test.51world.win</code> 时，如果客户端偏好的 DNS 没有纪录；<br>就会去问根域名服务器(root nameserver) <code>.win</code> 域名是谁管理的，它会回答出负责 <code>.win</code> 的 <code>nameserver</code>；<br>然后该 DNS 再去问 <code>.win</code> 的 <code>nameserver</code>， <code>51world.win</code> 是哪台 DNS 负责的；<br>再进一步，然后再去问那一台 <code>test.51world.win</code> 对应的 IP 是什么。<br></blockquote></blockquote>
 
 <h3 id="whois-指令"><a href="#whois-指令" class="headerlink" title="whois 指令"></a><strong>whois 指令</strong></h3><p>可以查询是谁注册了这个域名。不过，注册者可以选择关闭联络信息，所以不一定可以查到。</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825013903_LMojNg_wangluogailun-10.jpeg" alt=""><br><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825014249_m7hk8R_wangluogailun-11-1.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082403.jpeg" alt=""><br><img src="http://51world.win/pic_flow/2017/2017082404.jpeg" alt=""></p>
 <h3 id="nslookup-指令"><a href="#nslookup-指令" class="headerlink" title="nslookup 指令"></a><strong>nslookup 指令</strong></h3><p>可以简单查询 DNS：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825014750_4yg1gD_wangluogailun-12.jpeg" alt=""></p>
-<blockquote><br><code>Non-authoritative answer</code> 的意思是这个答案不是从负责 <code>51world.win</code> 域名的主机回传，而是直接从客户端偏好的 DNS 服务器 8.8.8.8 的缓存纪录回答的；<br>相反，<code>Authoritative</code> 的意思就是这个答案是从负责 <code>51world.win</code> 域名的 DNS 主机回传的。<br></blockquote>
+<p><img src="http://51world.win/pic_flow/2017/2017082405.jpeg" alt=""></p>
+<blockquote><code>Non-authoritative answer</code> 的意思是这个答案不是从负责 <code>51world.win</code> 域名的主机回传，而是直接从客户端偏好的 DNS 服务器 8.8.8.8 的缓存纪录回答的；<br>相反，<code>Authoritative</code> 的意思就是这个答案是从负责 <code>51world.win</code> 域名的 DNS 主机回传的。<br></blockquote>
 
-<h3 id="dig-指令"><a href="#dig-指令" class="headerlink" title="dig 指令"></a><strong>dig 指令</strong></h3><p>也可查询 DNS，提供更详细的数据：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825015529_hhWe8j_wangluogailun-13.jpeg" alt=""></p>
-<p>假设从根域名服务器开始查询：<br><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825022839_9foJPe_wangluogailun-14-2.jpeg" alt=""></p>
-<blockquote><br>DNS 记录分不同类型，如：<br>- <code>A</code> :一笔 IPv4 纪录，某个 subdomain 指向某一个 IPv4 地址<br>- <code>AAAA</code> :一笔 IPv6 纪录<br>- <code>MX</code> :邮件服务器(如 xxx.com 的邮件服务器和网站不是同一台服务器，很多公司会把邮件服务器改用 <a href="https://gsuite.google.com/" title="Google Apps" target="_blank" rel="noopener">Google Apps</a>，这在 DNS 设定中就可以指定 MX 记录：<code>dig -t mx xxx.com</code>)<br>- <code>CNAME</code> :别名，可以设定某个 subdomain 指向另一个地址(不一定是同一个主域名)<br></blockquote>
+<h3 id="dig-指令"><a href="#dig-指令" class="headerlink" title="dig 指令"></a><strong>dig 指令</strong></h3><p>也可查询 DNS，提供更详细的数据：<br><img src="http://51world.win/pic_flow/2017/2017082406.jpeg" alt=""></p>
+<p>假设从根域名服务器开始查询：<br><img src="http://51world.win/pic_flow/2017/2017082407.jpeg" alt=""></p>
+<blockquote>DNS 记录分不同类型，如：<br>- <code>A</code> :一笔 IPv4 纪录，某个 subdomain 指向某一个 IPv4 地址<br>- <code>AAAA</code> :一笔 IPv6 纪录<br>- <code>MX</code> :邮件服务器(如 xxx.com 的邮件服务器和网站不是同一台服务器，很多公司会把邮件服务器改用 <a href="https://gsuite.google.com/" title="Google Apps" target="_blank" rel="noopener">Google Apps</a>，这在 DNS 设定中就可以指定 MX 记录：<code>dig -t mx xxx.com</code>)<br>- <code>CNAME</code> :别名，可以设定某个 subdomain 指向另一个地址(不一定是同一个主域名)<br></blockquote>
 
 <h2 id="DNS-相关情境"><a href="#DNS-相关情境" class="headerlink" title="DNS 相关情境"></a><strong>DNS 相关情境</strong></h2><p>了解 DNS 机制的话，就可以理解以下现象：</p>
 <h3 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a><strong>故障排除</strong></h3><p>有时网络故障，浏览器无法连接，但可以 <code>ping</code> <code>ip address</code>。这时候可以优先检查是否是 DNS 坏了，可以换一台电脑再试试看。</p>
@@ -954,7 +954,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2019-02-16</span>
+  <span itemprop="copyrightYear">2019-02-20</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>

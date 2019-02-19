@@ -119,18 +119,18 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="网络 概念初识。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824181012_iCrOKk_wangluogailun-1.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824181415_Ag7l7I_wangluogailun-2.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824185248_rqSXo2_wangluogailun-3.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824190032_kme67C_wangluogailun-4.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824191711_aSmveG_wangluogailun-5.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824192511_Tvnb8k_wangluogailun-6.jpeg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170825001315_fAmoKP_wangluogailun-7.jpeg">
-<meta property="og:updated_time" content="2017-11-19T15:47:31.000Z">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082301.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082302.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082303.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082304.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082305.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082306.jpeg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017082307.jpeg">
+<meta property="og:updated_time" content="2019-02-19T17:06:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络概论（一）">
 <meta name="twitter:description" content="网络 概念初识。">
-<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170824181012_iCrOKk_wangluogailun-1.jpeg">
+<meta name="twitter:image" content="http://51world.win/pic_flow/2017/2017082301.jpeg">
 
 
 
@@ -509,9 +509,8 @@
 <p>身为一个 Web 应用程序员，你需要知道当我们在网页浏览器的地址栏输入一个网址回车后，背后到底发生了哪些事情。</p>
 <p>本节将介绍一下网络相关的基本概念。</p>
 <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a><strong>引子</strong></h2><p>让我们从一个简单的类比入手：</p>
-<blockquote><br>电脑网络跟传统电话有什么不一样?<br></blockquote>
+<blockquote>电脑网络跟传统电话有什么不一样?<br></blockquote>
 
-<p><br></p>
 <ul>
 <li><p>传统的电话使用的是<a href="https://zh.wikipedia.org/zh-cn/%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2" title="电路交换" target="_blank" rel="noopener">电路交换</a>的方式：呼叫方拨打电话后，中间经过电话交换机将线路接到受话方。讲话时整条线路被完全占用，一条电话线同时间只能一个人讲话。</p>
 </li>
@@ -528,9 +527,8 @@
 <li>应用层 (Application Layer)，网络 <strong>应用程序</strong> 之间如何处理数据（例如 HTTP 协议）</li>
 </ul>
 <p>你可以想像分层的意思就是数据包了四个信封。当我们的浏览器打开一个网站，服务器回传的 HTML 源码是最里面的 Payload，而它会被包在 HTTP 信封内，然后再包一层 IP 信封，然后再包一层 TCP 信封，然后再包一层 Etherent 信封，才会抵达你的电脑：</p>
-<blockquote><br>————————————————————————————————————————————————————————————————————<br>| Etherent 首部 | IP 首部 | TCP 首部 | HTTP 首部 | 实际的数据 HTML 源码 |<br>————————————————————————————————————————————————————————————————————<br></blockquote>
+<blockquote>—————————————————————————————————————————————————————————————<br>| Etherent 首部 | IP 首部 | TCP 首部 | HTTP 首部 | 实际的数据 HTML 源码 |<br>—————————————————————————————————————————————————————————————<br></blockquote>
 
-<p><br></p>
 <p>这样设计的好处是某一层如果需要改变，只需要替换那一层信封就好了。而且层次化之后，要设计新协议也会简单许多，我们不需要每次都重新设计全部的协议。</p>
 <p>下面我们简单介绍下每一层。</p>
 <h3 id="数据链路层-Link-Layer-硬件之间"><a href="#数据链路层-Link-Layer-硬件之间" class="headerlink" title="数据链路层 (Link Layer) - 硬件之间"></a><strong>数据链路层 (Link Layer)</strong> - 硬件之间</h3><p>家里或公司电脑要上网，首先必须接上网络线或用无线网络，来连结到家或公司的路由器(Router)。这之间需要一层信封写上电脑地址，这样路由器把数据传回时，才知道送到哪台电脑上。</p>
@@ -542,9 +540,9 @@
 </ul>
 <p>每一个网络设备在出厂时，都会配有一个 <a href="https://zh.wikipedia.org/zh-cn/MAC%E5%9C%B0%E5%9D%80" title="Mac 地址" target="_blank" rel="noopener">Mac 地址</a> (Media Access Control Address)，这个地址将用于「直接」相连在一起的硬件。例如连结到同一台路由器的公司电脑，这台路由器收到数据包就会用 Mac 地址来决定将这个数据包寄回到哪一台去(我们会说：这是同一个局域网)。</p>
 <p>命令行输入 <code>ifconfig</code> 可以看 Mac 地址：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824181012_iCrOKk_wangluogailun-1.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082301.jpeg" alt=""></p>
 <p>在 Mac 电脑上查看对应的接口（第一个）。这对应的就是你的无线网卡：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824181415_Ag7l7I_wangluogailun-2.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082302.jpeg" alt=""></p>
 <p>当你有数据要传到公开网站时，首先会从你电脑传到家里或公司的路由器，信封会填上 Mac 地址，然后发送出去。路由器收到之后，会把这一层的信封拆掉，换上与路由器直接连接的 ISP（Internet Service Provider，互联网服务供应商，如中国移动、中国联通的因特网运营商） 路由器的 Mac 地址，然后寄到下一个网络硬件设备，以此类推直到目的地网站服务器。</p>
 <h3 id="网络层-Internet-Layer-网络设备之间"><a href="#网络层-Internet-Layer-网络设备之间" class="headerlink" title="网络层 (Internet Layer) - 网络设备之间"></a><strong>网络层 (Internet Layer)</strong> - 网络设备之间</h3><p>前面介绍的数据链路层使用的 Mac 地址，只有直接相连网络设备才会互相知道。比如你的电脑知道它链接的路由器的 Mac 地址、路由器知道跟他连结的设备的 Mac 地址。但我们不知道家或公司路由器出去之后的网络设备的 Mac 地址，我们也不可能知道网上所有网络设备 Mac 地址。</p>
 <p>互联网的节点数很多，数据包是由一个路由器传递给下一个路由器，每个传递都更接近目的地。而这个目的地需要一个地址，而这就是 IP 协议所处理的。</p>
@@ -552,19 +550,18 @@
 <p>这个 IP 地址是全球唯一的，IP 地址最多可有 <code>4,294,967,296</code> 个，乍看好像很多，但由于互联网大量普及，IPv4 的 42 亿个地址的分配已经于 2011 年 2 月 3 日全部分配完毕，分给不同国家、公司组织、学校等使用。</p>
 <p>IP 地址设计时保留了一些私有 IP 地址用于局域网，最常见的是 <code>192.168.0.0</code> 到 <code>192.168.255.255</code> 这个范围，你在家里或公司连上无线路由器时，就会被分配到这个地址。另外还保留一个 <code>127.0.0.1</code> 代表本机电脑，私有 IP 地址。</p>
 <p>几个小知识点：</p>
-<blockquote><br><a href="https://zh.wikipedia.org/zh-cn/%E6%97%A0%E7%B1%BB%E5%88%AB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1" title="CIDR" target="_blank" rel="noopener">CIDR</a> 是一种 IP 位址的表示法，用来表示一整个区块的 IP 位置。（在配置网络防火墙的时候会用到）<br><blockquote><br><code>a.b.c.0/16</code> ： <code>a.b.0.0</code> 到 <code>a.b.255.255</code>，共 65,536 个地址<br><code>a.b.c.0/24</code> ： <code>a.b.c.0</code> 到 <code>a.b.c.255</code>，共 256 个地址<br><code>a.b.c.0/32</code> ： <code>a.b.c.d</code> 一个地址<br></blockquote><br></blockquote>
+<blockquote><a href="https://zh.wikipedia.org/zh-cn/%E6%97%A0%E7%B1%BB%E5%88%AB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1" title="CIDR" target="_blank" rel="noopener">CIDR</a> 是一种 IP 位址的表示法，用来表示一整个区块的 IP 位置。（在配置网络防火墙的时候会用到）<br><blockquote><code>a.b.c.0/16</code> ： <code>a.b.0.0</code> 到 <code>a.b.255.255</code>，共 65,536 个地址<br><code>a.b.c.0/24</code> ： <code>a.b.c.0</code> 到 <code>a.b.c.255</code>，共 256 个地址<br><code>a.b.c.0/32</code> ： <code>a.b.c.d</code> 一个地址<br></blockquote></blockquote>
 
-<p><br></p>
-<blockquote><br>既然 IPv4 地址不够了，新标准 IPv6 使用了 16 bytes 来表示网络位置，具体数量为 <code>340,282,366,920,938,463,463,374,607,431,768,211,456</code> 个，真的用不完了。不过对一般用户似乎很少用到。这是因为要使用 IPv6，必须客户端到服务器中间的网络设备都要支持 IPv6，而大部分的 ISP 营运商都还没默认支援 IPv6。<br><blockquote><br>Apple 要求从 2016/6/1 开始，所有上架的 App 必须 IPv6 兼容。<br></blockquote><br></blockquote>
+<blockquote>既然 IPv4 地址不够了，新标准 IPv6 使用了 16 bytes 来表示网络位置，具体数量为 <code>340,282,366,920,938,463,463,374,607,431,768,211,456</code> 个，真的用不完了。不过对一般用户似乎很少用到。这是因为要使用 IPv6，必须客户端到服务器中间的网络设备都要支持 IPv6，而大部分的 ISP 营运商都还没默认支援 IPv6。<br><blockquote>Apple 要求从 2016/6/1 开始，所有上架的 App 必须 IPv6 兼容。<br></blockquote></blockquote>
 
 <h4 id="NAT-技术"><a href="#NAT-技术" class="headerlink" title="NAT 技术"></a><strong>NAT 技术</strong></h4><p>刚提到 IPv4 的42亿个地址已经被分配完，但大家不是很着急要升级 IPv6 这件事情，这是什么原因？</p>
 <p>这是因为我们用了 <a href="https://zh.wikipedia.org/zh-cn/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2" title="NAT" target="_blank" rel="noopener">NAT</a> 技术，因此不需要每一台需要上网的电脑都有一个公开的 IP。</p>
 <p>透过 NAT 技术，家里或公司只有路由器那一台网络设备需要公开的 IP 地址，局域网内使用私有 IP 地址即可。这台路由器会记得当初数据包是从拿一台电脑送出来的，当数据包从因特网返回时，会有一个 IP 地址转换。</p>
 <p>这也是因为局域网内的电脑只需要上网，不需要做成服务器让因特网上的其他电脑可以连线。换言之，<strong>一台电脑如果要是因特网上可以被连线的服务器，必须要有一个公开的 IP 地址。</strong></p>
 <p>同样，命令行输入 <code>ifconfig</code> 可以看 IP 地址，并在 Mac 电脑上查看对应的参数：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824185248_rqSXo2_wangluogailun-3.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082303.jpeg" alt=""></p>
 <p>这里多介绍几个知识点：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824190032_kme67C_wangluogailun-4.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082304.jpeg" alt=""></p>
 <p>上图中的：</p>
 <ul>
 <li><a href="https://zh.wikipedia.org/zh-cn/%E5%8A%A8%E6%80%81%E4%B8%BB%E6%9C%BA%E8%AE%BE%E7%BD%AE%E5%8D%8F%E8%AE%AE" title="DHCP 协议" target="_blank" rel="noopener">DHCP 协议</a> 指当电脑连上路由器时，会自动请路由器分配一个局域网的私有 IP 地址给你。</li>
@@ -572,12 +569,12 @@
 <li>Router(路由器)的地址是 <code>192.168.1.1</code>，你的数据包首先会送到这台网络设备，由路由路决定下一站去哪里。</li>
 <li>另外 broadcast 地址 <code>192.168.1.255</code> 是向全局域网广播的地址，结尾 <code>.255</code> 是广播的意思。</li>
 </ul>
-<h4 id="ping-指令"><a href="#ping-指令" class="headerlink" title="ping 指令"></a><strong>ping 指令</strong></h4><p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824191711_aSmveG_wangluogailun-5.jpeg" alt=""></p>
+<h4 id="ping-指令"><a href="#ping-指令" class="headerlink" title="ping 指令"></a><strong>ping 指令</strong></h4><p><img src="http://51world.win/pic_flow/2017/2017082305.jpeg" alt=""></p>
 <p><code>ping</code> 可以用来测试数据包送到目的地所需时间。其中 time 是 RTT(Round Trip Time) 也就是往返时间，单位是 ms (千分之一秒)。</p>
 <p>这个时间主要取决于地理位置。如果你在北京去 ping 国内大陆网站，会得到超快的速度；如果去 ping 台湾或日本的服务器会慢点，去 ping 美国的服务器要 200ms (例如 github.com)，要去欧洲或南美洲就更远了。</p>
 <p>这个速度的物理限制是光速，要去美国的海底电缆是走太平洋，往返到地球另一端就是需要这么多时间。这就是为什么网站的连线速度要好，就得把服务器离用户比较近的原因。</p>
 <p>Tips：不是每一台服务器都会回应 ping 信息，有些服务器会关闭此功能。</p>
-<h4 id="traceroute-指令"><a href="#traceroute-指令" class="headerlink" title="traceroute 指令"></a><strong>traceroute 指令</strong></h4><p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170824192511_Tvnb8k_wangluogailun-6.jpeg" alt=""></p>
+<h4 id="traceroute-指令"><a href="#traceroute-指令" class="headerlink" title="traceroute 指令"></a><strong>traceroute 指令</strong></h4><p><img src="http://51world.win/pic_flow/2017/2017082306.jpeg" alt=""></p>
 <p><code>traceroute</code> 用来追踪到达目的地过程中，每台路由器节点的回应。</p>
 <p>Tips：和 <code>ping</code> 一样，不是每台路由器都会回应这个信息，有些路由器会关闭这个功能。</p>
 <h3 id="传输层-Transport-Layer-电脑之间"><a href="#传输层-Transport-Layer-电脑之间" class="headerlink" title="传输层 (Transport Layer) - 电脑之间"></a><strong>传输层 (Transport Layer)</strong> - 电脑之间</h3><p>IP 数据包有 IP 地址可以抵达对方电脑，但是一台电脑上有很多不同的应用程序，到底这个数据包抵达对方电脑后要给哪个程序处理呢? 同理，数据包送回后，又是你电脑的哪个程序去处理？</p>
@@ -590,7 +587,7 @@
 <p>因此在 TCP 协议中用了更多步骤来保证传输的正确性（包括会重发遗失的封包、舍弃重复的封包、无错误资料传输、阻塞/流量控制、确认有建立三方交握，连线已建立才作传输等算法）。TCP 是个非常复杂的协议，也是使用最广泛的协议，和 IP 协议合称 <code>TCP/IP</code>，下面将要提到的大部分的应用层协议，包括 HTTP 都是基于 TCP/IP 的。</p>
 <p>（TCP/IP 是大学本科网络概论课的重头戏，会完整介绍如何实作 TCP 协议。TCP/IP 的首部是二进制格式，这里就不讲规格细节了。推荐阅读<a href="http://www.ruanyifeng.com/blog/2017/06/tcp-protocol.html" title="阮一峰博客《TCP 协议简介》" target="_blank" rel="noopener">阮一峰博客《TCP 协议简介》</a>）</p>
 <h4 id="相关工具"><a href="#相关工具" class="headerlink" title="相关工具"></a><strong>相关工具</strong></h4><p>通过 <a href="https://zh.wikipedia.org/zh-cn/Wireshark" title="Wireshark" target="_blank" rel="noopener">Wireshark</a> 或 <a href="https://packetpeeper.org/" title="Packet Peeper" target="_blank" rel="noopener">Packet Peeper</a> 之类的软件可以进行网络封包的撷取：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170825001315_fAmoKP_wangluogailun-7.jpeg" alt=""></p>
+<p><img src="http://51world.win/pic_flow/2017/2017082307.jpeg" alt=""></p>
 <h3 id="应用层-Application-Layer-应用程序之间"><a href="#应用层-Application-Layer-应用程序之间" class="headerlink" title="应用层 (Application Layer) - 应用程序之间"></a><strong>应用层 (Application Layer)</strong> - 应用程序之间</h3><p><code>TCP/IP</code> 协议是操作系统本身会提供的网络功能，而在我们电脑上会有不同的应用软件会基于 <code>TCP/IP</code> 实现<a href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E5%B1%82" title="应用层协议" target="_blank" rel="noopener">应用层协议</a>，例如：</p>
 <ul>
 <li>DNS</li>
@@ -1001,7 +998,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2019-02-16</span>
+  <span itemprop="copyrightYear">2019-02-20</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
