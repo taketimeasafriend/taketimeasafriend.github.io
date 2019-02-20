@@ -119,12 +119,12 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="学习之前最重要的是先要了解各种基本的 概念 和它们的 关联。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/JavaScript%20%E4%BB%A5%E5%8F%8A%E5%AE%83%E7%9A%84%E5%90%8E%E4%BB%A3%EF%BC%9AjQuery%20%E5%92%8C%20Ajax%20%E5%85%B3%E7%B3%BB.png">
-<meta property="og:updated_time" content="2017-07-04T10:59:59.000Z">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017070401.png">
+<meta property="og:updated_time" content="2019-02-20T18:04:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 以及它的后代：jQuery 和 Ajax">
 <meta name="twitter:description" content="学习之前最重要的是先要了解各种基本的 概念 和它们的 关联。">
-<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/JavaScript%20%E4%BB%A5%E5%8F%8A%E5%AE%83%E7%9A%84%E5%90%8E%E4%BB%A3%EF%BC%9AjQuery%20%E5%92%8C%20Ajax%20%E5%85%B3%E7%B3%BB.png">
+<meta name="twitter:image" content="http://51world.win/pic_flow/2017/2017070401.png">
 
 
 
@@ -502,20 +502,20 @@
 <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>写 web，在掌握了<a href="http://51world.win/2017/05/31/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-HTML%7CCSS%7CXHTML/" title="基本的 html 和 css 之后" target="_blank" rel="noopener">基本的 html 和 css 之后</a>，就该向 JavaScript 进发了。</p>
 <p>学习之前听同事说这东西 <strong>入门易</strong>（毕竟现在网页数量井喷式爆发，随手拿来各种源代码修修补补就能用）<strong>精通难</strong>（比如阮一峰好像现阶段就在阿里写 JS）。</p>
 <p>无论学习什么知识，学习之前最重要的是先要了解各种基本的 <strong>概念</strong> 和它们的 <strong>关联</strong>，甚至它们的 <strong>发展历史</strong>。</p>
-<h2 id="JavaScript-jQuery-Ajax-概览"><a href="#JavaScript-jQuery-Ajax-概览" class="headerlink" title="JavaScript - jQuery - Ajax 概览"></a>JavaScript - jQuery - Ajax 概览</h2><h3 id="JavaScript："><a href="#JavaScript：" class="headerlink" title="JavaScript："></a>JavaScript：</h3><blockquote><br>- 常用来为网页添加各种动态功能，为用户提供更流畅美观的效果（如：数据验证处理、页面动态效果、定时任务、与用户交互、发送/接收服务器端数据等）<br>- 通过嵌入在 HTML 中来实现，直接在浏览器中解释执行（脚本语言）<br>- 主流框架：YUI，Dojo，Prototype，<strong>jQuery</strong> …<br>- 组成部分：核心(ECMAScript)、文档对象模型(Document Object Model，简称DOM)、浏览器对象模型(Browser Object Model，简称BOM)<br></blockquote>
+<h2 id="JavaScript-jQuery-Ajax-概览"><a href="#JavaScript-jQuery-Ajax-概览" class="headerlink" title="JavaScript - jQuery - Ajax 概览"></a>JavaScript - jQuery - Ajax 概览</h2><h3 id="JavaScript："><a href="#JavaScript：" class="headerlink" title="JavaScript："></a>JavaScript：</h3><blockquote>- 常用来为网页添加各种动态功能，为用户提供更流畅美观的效果（如：数据验证处理、页面动态效果、定时任务、与用户交互、发送/接收服务器端数据等）<br>- 通过嵌入在 HTML 中来实现，直接在浏览器中解释执行（脚本语言）<br>- 主流框架：YUI，Dojo，Prototype，<strong>jQuery</strong> …<br>- 组成部分：核心(ECMAScript)、文档对象模型(Document Object Model，简称DOM)、浏览器对象模型(Browser Object Model，简称BOM)<br></blockquote>
 
-<h3 id="Ajax："><a href="#Ajax：" class="headerlink" title="Ajax："></a>Ajax：</h3><blockquote><br>- “ Asynchronous JavaScript and XML ” (异步JavaScript和XML)，不是一个技术，是 <strong>几种技术</strong>（XML、CSS 以及 JavaScript 等）<br>- Web 页面不用打断交互进行重新加裁，就可以动态地更新，接近本地桌面应用的直接、更动态的Web用户界面<br>- 使用 XML HttpRequest 与服务器进行异步通信<br></blockquote>
+<h3 id="Ajax："><a href="#Ajax：" class="headerlink" title="Ajax："></a>Ajax：</h3><blockquote>- “ Asynchronous JavaScript and XML ” (异步JavaScript和XML)，不是一个技术，是 <strong>几种技术</strong>（XML、CSS 以及 JavaScript 等）<br>- Web 页面不用打断交互进行重新加裁，就可以动态地更新，接近本地桌面应用的直接、更动态的Web用户界面<br>- 使用 XML HttpRequest 与服务器进行异步通信<br></blockquote>
 
-<h3 id="jQuery："><a href="#jQuery：" class="headerlink" title="jQuery："></a>jQuery：</h3><blockquote><br>- 快速简洁的 JavaScript 库（集合 <strong>Ajax</strong> 技术的 <strong>JS</strong> 库，封装 JS 和 Ajax 的功能，提供接口），使用户能更方便处理 HTML documents、events、动画，方便地为网站提供Ajax交互<br>- Query 是 “ 查询 ” 的意思（基于 JavaScript 的查询，查询目标：DOM 结构中的 Node（节点）<br>- 独立、链式语法、CSS1-3选择器、跨浏览器<br>- 插件多<br></blockquote>
+<h3 id="jQuery："><a href="#jQuery：" class="headerlink" title="jQuery："></a>jQuery：</h3><blockquote>- 快速简洁的 JavaScript 库（集合 <strong>Ajax</strong> 技术的 <strong>JS</strong> 库，封装 JS 和 Ajax 的功能，提供接口），使用户能更方便处理 HTML documents、events、动画，方便地为网站提供Ajax交互<br>- Query 是 “ 查询 ” 的意思（基于 JavaScript 的查询，查询目标：DOM 结构中的 Node（节点）<br>- 独立、链式语法、CSS1-3选择器、跨浏览器<br>- 插件多<br></blockquote>
 
-<p><br><br>让我们用一张图对三者做个总结：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/JavaScript%20%E4%BB%A5%E5%8F%8A%E5%AE%83%E7%9A%84%E5%90%8E%E4%BB%A3%EF%BC%9AjQuery%20%E5%92%8C%20Ajax%20%E5%85%B3%E7%B3%BB.png" alt="JavaScript 以及它的后代：jQuery 和 Ajax 关系" title="JavaScript 以及它的后代：jQuery 和 Ajax 关系"></p>
+<p>让我们用一张图对三者做个总结：</p>
+<p><img src="http://51world.win/pic_flow/2017/2017070401.png" alt="JavaScript 以及它的后代：jQuery 和 Ajax 关系" title="JavaScript 以及它的后代：jQuery 和 Ajax 关系"></p>
 <p>这里需要多介绍一个网页开发经常用到的东西 —— <strong>JSON</strong>（JavaScript Object Notation - js 对象标记法）。</p>
 <p>从名称可以看出，JSON 是基于 JavaScript的，是 JS 的一个子集。JSON 是用 JS 语法来表示数据的一种轻量级语言（相比较上面说的 XML 这种结构复杂的语言）。</p>
 <p>另外还有 <strong>Node.js</strong>，这里先不讨论，以后按需补充。</p>
 <p>更多关于它们的关系，可以<a href="https://www.zhihu.com/question/31305968" title="点击这里查看" target="_blank" rel="noopener">点击这里查看</a>。</p>
-<h2 id="继续学习（待续）"><a href="#继续学习（待续）" class="headerlink" title="继续学习（待续）"></a>继续学习（待续）</h2><h3 id="《Head-First-jQuery》"><a href="#《Head-First-jQuery》" class="headerlink" title="《Head First jQuery》"></a>《Head First jQuery》</h3><p><a href="http://51world.win/2017/07/04/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20jQuery/" target="_blank" rel="noopener">http://51world.win/2017/07/04/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20jQuery/</a></p>
-<h3 id="《Head-First-Ajax》"><a href="#《Head-First-Ajax》" class="headerlink" title="《Head First Ajax》"></a>《Head First Ajax》</h3><p><a href="http://51world.win/2017/07/04/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20Ajax/" target="_blank" rel="noopener">http://51world.win/2017/07/04/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20Ajax/</a></p>
+<h2 id="继续学习（待续）"><a href="#继续学习（待续）" class="headerlink" title="继续学习（待续）"></a>继续学习（待续）</h2><h3 id="《Head-First-jQuery》"><a href="#《Head-First-jQuery》" class="headerlink" title="《Head First jQuery》"></a>《Head First jQuery》</h3><p><a href="http://51world.win/2017/07/04/code/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20jQuery/" target="_blank" rel="noopener">http://51world.win/2017/07/04/code/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20jQuery/</a></p>
+<h3 id="《Head-First-Ajax》"><a href="#《Head-First-Ajax》" class="headerlink" title="《Head First Ajax》"></a>《Head First Ajax》</h3><p><a href="http://51world.win/2017/07/04/code/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20Ajax/" target="_blank" rel="noopener">http://51world.win/2017/07/04/code/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%20Ajax/</a></p>
 
       
     </div>
@@ -911,7 +911,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2019-02-20</span>
+  <span itemprop="copyrightYear">2019-02-21</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>

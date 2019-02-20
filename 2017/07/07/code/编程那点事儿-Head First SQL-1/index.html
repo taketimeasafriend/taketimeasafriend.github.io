@@ -119,7 +119,7 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="数据库 概念初识。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-19T15:45:52.000Z">
+<meta property="og:updated_time" content="2019-02-20T18:00:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First SQL（一）">
 <meta name="twitter:description" content="数据库 概念初识。">
@@ -507,32 +507,32 @@
 <h2 id="数据库分类"><a href="#数据库分类" class="headerlink" title="数据库分类"></a><strong>数据库分类</strong></h2><h3 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a><strong>关系型数据库</strong></h3><p>数据库有很多种，其中一种叫做 <strong>「关系型数据库」</strong> (RDBMS: Relational Database Management System) 是目前最普遍使用的。这种数据库包括开源的（SQLite、MySQL、PostgreSQL）和付费的（Oracal、Microsoft SQL Server）等。简单介绍如下：</p>
 <ul>
 <li><p><strong>SQLite</strong> - <a href="https://www.sqlite.org/" target="_blank" rel="noopener">https://www.sqlite.org/</a></p>
-<blockquote><br>1 - 轻量级（Rails 默认），不是单独的服务器，而是集成在我们程序(比如 Rails)之中，一个数据库就是一个档案。（比如在 Rails 中是 <code>db/development.sqlite3</code> 这个档案）<br>2 - 主要用于单机，比如移动装置（手机），不适合多人在线使用的场景。（在实际部署 Rails 到服务器时，我们会换成下面介绍的 PostgreSQL 或 MySQL 等数据库服务器）<br>3 - Mac 本身内建 SQLite3，下载 <a href="http://sqlitebrowser.org/" title="DB Browser for SQLite" target="_blank" rel="noopener">DB Browser for SQLite</a> 这个 GUI 软件，就可以打开 SQLite3 的数据档案。<br></blockquote>
+<blockquote>1 - 轻量级（Rails 默认），不是单独的服务器，而是集成在我们程序(比如 Rails)之中，一个数据库就是一个档案。（比如在 Rails 中是 <code>db/development.sqlite3</code> 这个档案）<br>2 - 主要用于单机，比如移动装置（手机），不适合多人在线使用的场景。（在实际部署 Rails 到服务器时，我们会换成下面介绍的 PostgreSQL 或 MySQL 等数据库服务器）<br>3 - Mac 本身内建 SQLite3，下载 <a href="http://sqlitebrowser.org/" title="DB Browser for SQLite" target="_blank" rel="noopener">DB Browser for SQLite</a> 这个 GUI 软件，就可以打开 SQLite3 的数据档案。<br></blockquote>
 </li>
 <li><p><strong>MySQL</strong> - <a href="https://www.mysql.com/" target="_blank" rel="noopener">https://www.mysql.com/</a></p>
-<blockquote><br>1- 目前最流行的开源数据库，易上手、资源多、效能好，最多网络公司使用的数据库。<br>2- 是一个数据库服务器，除了安装还必须让 MySQL 服务器在后台运行，要连接 MySQL 也必须输入帐号密码。<br>3- Mac 用 <code>brew install mysql</code> 安装，推荐再安装 <a href="https://www.sequelpro.com/" title="Sequel Pro" target="_blank" rel="noopener">Sequel Pro</a> 这套 GUI 软件。<br></blockquote>
+<blockquote>1- 目前最流行的开源数据库，易上手、资源多、效能好，最多网络公司使用的数据库。<br>2- 是一个数据库服务器，除了安装还必须让 MySQL 服务器在后台运行，要连接 MySQL 也必须输入帐号密码。<br>3- Mac 用 <code>brew install mysql</code> 安装，推荐再安装 <a href="https://www.sequelpro.com/" title="Sequel Pro" target="_blank" rel="noopener">Sequel Pro</a> 这套 GUI 软件。<br></blockquote>
 </li>
 <li><p><strong>PostgreSQL</strong> - <a href="https://www.postgresql.org/" target="_blank" rel="noopener">https://www.postgresql.org/</a></p>
-<blockquote><br>1- 常与 MySQL 相提并论(Heroku 服务器默认)，功能比 MySQL 多，但在超大量数据场景不如 MySQL 有更多的分布式服务器经验。<br>2- Mac 用 <code>brew install postgresql</code> 安装，GUI 可以考虑安装 <a href="https://www.pgadmin.org/" title="pgAdmin" target="_blank" rel="noopener">pgAdmin</a>。<br></blockquote>
+<blockquote>1- 常与 MySQL 相提并论(Heroku 服务器默认)，功能比 MySQL 多，但在超大量数据场景不如 MySQL 有更多的分布式服务器经验。<br>2- Mac 用 <code>brew install postgresql</code> 安装，GUI 可以考虑安装 <a href="https://www.pgadmin.org/" title="pgAdmin" target="_blank" rel="noopener">pgAdmin</a>。<br></blockquote>
 </li>
 <li><p><strong>Oracle</strong> 和 <strong>MS SQL Server</strong></p>
-<blockquote><br>1- 这两家公司提供的付费数据库。通常非软件开发的大型企业(例如银行、保险业等)会采购。<br>2- 有更好的自调优功能。<br></blockquote>
+<blockquote>1- 这两家公司提供的付费数据库。通常非软件开发的大型企业(例如银行、保险业等)会采购。<br>2- 有更好的自调优功能。<br></blockquote>
 
 </li>
 </ul>
 <h3 id="NoSQL"><a href="#NoSQL" class="headerlink" title="NoSQL"></a><strong>NoSQL</strong></h3><p>世界上除了 <strong>「关系型数据库」</strong>，还有不使用 SQL 的，泛称 NoSQL。分类如下：</p>
 <ul>
 <li><p><strong>Key-value</strong></p>
-<blockquote><br>Redis（ <a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a> ）是一种小型数据结构，作为搭配用的数据库(主要是局部的密集性写入的功能，降低主数据库的负担)。用途包括：<br><blockquote><br># 各式计数器：+1<br># 简易标记(例如同一 IP 十分钟内只算一次 pageview)<br># 排行榜 zadd<br># 自制 Inverted-Index Text Search<br># Pub/Sub 聊天室<br># Job Queue (例如 sidekiq)<br></blockquote><br></blockquote>
+<blockquote>Redis（ <a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a> ）是一种小型数据结构，作为搭配用的数据库(主要是局部的密集性写入的功能，降低主数据库的负担)。用途包括：<br><blockquote># 各式计数器：+1<br># 简易标记(例如同一 IP 十分钟内只算一次 pageview)<br># 排行榜 zadd<br># 自制 Inverted-Index Text Search<br># Pub/Sub 聊天室<br># Job Queue (例如 sidekiq)<br></blockquote></blockquote>
 </li>
 <li><p><strong>Document-Oriented</strong></p>
-<blockquote><br>MongoDB (<a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a>) 是一种泛用型的数据库。特色是数据的结构 Schema 不需要提前定义。（ 在 Rails 社区曾非常流行，因为不需 Migration 去定义 Schema 就可使用 Model。一开始非常方便，后来大家发现营运久了以后，没有 Schema 的数据会变脏，造成维运成本增加。后来就不流行了。）<br></blockquote>
+<blockquote>MongoDB (<a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a>) 是一种泛用型的数据库。特色是数据的结构 Schema 不需要提前定义。（ 在 Rails 社区曾非常流行，因为不需 Migration 去定义 Schema 就可使用 Model。一开始非常方便，后来大家发现营运久了以后，没有 Schema 的数据会变脏，造成维运成本增加。后来就不流行了。）<br></blockquote>
 </li>
 <li><p><strong>Column-Oriented</strong></p>
-<blockquote><br>1 - 关系型数据库缺点是效能，在处理具体数据时必须锁住一些数据来避免其他人同时修改。因此如果一个写入流量非常大的网站（如一个售票网站，非常多人在开票时准时抢票）效能非常差。特别是当数据非常巨量的时候，需要多台数据库服务器时，写入速度就会成为扩充的瓶颈。<br>2 - 根据 <a href="https://zh.wikipedia.org/zh-cn/CAP%E5%AE%9A%E7%90%86" title="CAP 定理" target="_blank" rel="noopener">CAP 定理</a>告诉我们：关系型数据库在多服务器(P)架构下为了维持 C(一致性) 特性，只能牺牲 A(可用性)。NoSQL 让你有折衷（tradeoff）的空间，牺牲 C 特性以换得 A。但这不是 C 和 A 二元的博弈，而是 C 和 延迟时间的取舍（你愿意容忍多少延迟时间才算作不 A）。<br>3 - 因此这类型的 NoSQL 不讲 <a href="http://baike.baidu.com/link?url=ZFDsz3yKGE1D_L6X58c7iJ3Ch5I9_LBiGcAm53WYMvuMNxHGT6UIfcmCjDUu12OoxXFCzf3KRc6z8ABadpW5zq" title="ACID" target="_blank" rel="noopener">ACID</a>，而是讲 BASE 特性 (Basically Available, Soft state, Eventual consistency)，重点是 Eventual consistency(最后结果一致)。想像一个场景: Facebook、Twitter和新浪微博发“微博”，当发送成功时，并不是马上其他人就能看到你的微博，这中间是有延时的。这个延时对关系型数据库是不可接受的，但对这种社交应用来说却没有关系。牺牲一致性，就可以换到更多的写入反应效能，这就是这类 NoSQL 的设计目的。<br>举例：（如果你的数据量不到 1PB (=1000TB)就不需要考虑这类数据库了，MySQL 或 PostgreSQL 足矣）<br><blockquote><br># Apache HBase - <a href="https://hbase.apache.org/" target="_blank" rel="noopener">https://hbase.apache.org/</a><br># Apache Cassandra - <a href="http://cassandra.apache.org/" target="_blank" rel="noopener">http://cassandra.apache.org/</a><br># Amazon DynamoDB - <a href="https://aws.amazon.com/cn/dynamodb/" target="_blank" rel="noopener">https://aws.amazon.com/cn/dynamodb/</a><br># Google Cloud Datastore - <a href="https://cloud.google.com/datastore/" target="_blank" rel="noopener">https://cloud.google.com/datastore/</a><br></blockquote><br></blockquote>
+<blockquote>1 - 关系型数据库缺点是效能，在处理具体数据时必须锁住一些数据来避免其他人同时修改。因此如果一个写入流量非常大的网站（如一个售票网站，非常多人在开票时准时抢票）效能非常差。特别是当数据非常巨量的时候，需要多台数据库服务器时，写入速度就会成为扩充的瓶颈。<br>2 - 根据 <a href="https://zh.wikipedia.org/zh-cn/CAP%E5%AE%9A%E7%90%86" title="CAP 定理" target="_blank" rel="noopener">CAP 定理</a>告诉我们：关系型数据库在多服务器(P)架构下为了维持 C(一致性) 特性，只能牺牲 A(可用性)。NoSQL 让你有折衷（tradeoff）的空间，牺牲 C 特性以换得 A。但这不是 C 和 A 二元的博弈，而是 C 和 延迟时间的取舍（你愿意容忍多少延迟时间才算作不 A）。<br>3 - 因此这类型的 NoSQL 不讲 <a href="http://baike.baidu.com/link?url=ZFDsz3yKGE1D_L6X58c7iJ3Ch5I9_LBiGcAm53WYMvuMNxHGT6UIfcmCjDUu12OoxXFCzf3KRc6z8ABadpW5zq" title="ACID" target="_blank" rel="noopener">ACID</a>，而是讲 BASE 特性 (Basically Available, Soft state, Eventual consistency)，重点是 Eventual consistency(最后结果一致)。想像一个场景: Facebook、Twitter和新浪微博发“微博”，当发送成功时，并不是马上其他人就能看到你的微博，这中间是有延时的。这个延时对关系型数据库是不可接受的，但对这种社交应用来说却没有关系。牺牲一致性，就可以换到更多的写入反应效能，这就是这类 NoSQL 的设计目的。<br>举例：（如果你的数据量不到 1PB (=1000TB)就不需要考虑这类数据库了，MySQL 或 PostgreSQL 足矣）<br><blockquote># Apache HBase - <a href="https://hbase.apache.org/" target="_blank" rel="noopener">https://hbase.apache.org/</a><br># Apache Cassandra - <a href="http://cassandra.apache.org/" target="_blank" rel="noopener">http://cassandra.apache.org/</a><br># Amazon DynamoDB - <a href="https://aws.amazon.com/cn/dynamodb/" target="_blank" rel="noopener">https://aws.amazon.com/cn/dynamodb/</a><br># Google Cloud Datastore - <a href="https://cloud.google.com/datastore/" target="_blank" rel="noopener">https://cloud.google.com/datastore/</a><br></blockquote></blockquote>
 </li>
 <li><p><strong>Graph: neo4j 图形数据库</strong></p>
-<blockquote><br>neo4j（ <a href="https://neo4j.com/" target="_blank" rel="noopener">https://neo4j.com/</a> ）用节点和边来储存数据。<br></blockquote>
+<blockquote>neo4j（ <a href="https://neo4j.com/" target="_blank" rel="noopener">https://neo4j.com/</a> ）用节点和边来储存数据。<br></blockquote>
 
 </li>
 </ul>
@@ -932,7 +932,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2019-02-20</span>
+  <span itemprop="copyrightYear">2019-02-21</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>

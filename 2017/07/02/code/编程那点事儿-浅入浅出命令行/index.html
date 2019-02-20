@@ -119,15 +119,15 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="命令行是程序员的必备技能。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/cli.jpg">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/fish.png">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/fish2.png">
-<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/fish3.png">
-<meta property="og:updated_time" content="2017-12-10T19:11:15.000Z">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017070221.jpg">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017070222.png">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017070223.png">
+<meta property="og:image" content="http://51world.win/pic_flow/2017/2017070224.png">
+<meta property="og:updated_time" content="2019-02-20T18:11:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅入浅出命令行">
 <meta name="twitter:description" content="命令行是程序员的必备技能。">
-<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/cli.jpg">
+<meta name="twitter:image" content="http://51world.win/pic_flow/2017/2017070221.jpg">
 
 
 
@@ -502,7 +502,7 @@
         <blockquote class="blockquote-center">命令行是程序员的必备技能。<br></blockquote>
 
 <a id="more"></a>
-<h2 id="关于命令行容易混淆的概念简析"><a href="#关于命令行容易混淆的概念简析" class="headerlink" title="关于命令行容易混淆的概念简析"></a>关于命令行容易混淆的概念简析</h2><p><img src="http://ogudt6aal.bkt.clouddn.com/image/cli.jpg" alt="command-line interface" title="command-line interface">  </p>
+<h2 id="关于命令行容易混淆的概念简析"><a href="#关于命令行容易混淆的概念简析" class="headerlink" title="关于命令行容易混淆的概念简析"></a>关于命令行容易混淆的概念简析</h2><p><img src="http://51world.win/pic_flow/2017/2017070221.jpg" alt="command-line interface" title="command-line interface">  </p>
 <p><strong>1. CLI</strong></p>
 <p>命令行（Command-line interface - CLI）是在 <strong>图形用户界面</strong> (Graphical user interface - GUI) 得到普及之前使用最为广泛的 <strong>用户界面</strong>。</p>
 <p>命令行要较图形用户界面 <strong>节约计算机系统资源</strong> 。在熟记命令的前提下，使用命令行往往要较使用图形用户界面的操作速度快。所以，现在的操作系统中通常保留着可选的命令行界面。</p>
@@ -542,7 +542,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install fish</span><br></pre></td></tr></table></figure>
 <p>其他系统的安装请参考<a href="http://fishshell.com/#platform_tabs" title="官网" target="_blank" rel="noopener">官网</a>。</p>
 <h3 id="启动与帮助"><a href="#启动与帮助" class="headerlink" title="启动与帮助"></a>启动与帮助</h3><p>安装完成后会提示将 fish 设为默认 shell，如下图：</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/fish.png" alt="make fish your default shell" title="make fish your default shell">  </p>
+<p><img src="http://51world.win/pic_flow/2017/2017070222.png" alt="make fish your default shell" title="make fish your default shell">  </p>
 <p>由于 Fish 的语法与 bash 有很大差异，Bash 脚本一般不兼容。因此，建议不要将 Fish 设为默认 Shell，而是每次手动启动它。</p>
 <p>使用过程中，如果需要帮助，可以输入help命令。浏览器就会自动打开，显示 fish 帮助文档。</p>
 <h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>敲入几个命令试试，先感受下，感觉到方便了吗？</p>
@@ -550,7 +550,7 @@
 <li>无效命令为红色，有效命令为蓝色</li>
 <li>有效路径会有下划线</li>
 </ul>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/fish2.png" alt="有效路径会有下划线" title="有效路径会有下划线">  </p>
+<p><img src="http://51world.win/pic_flow/2017/2017070223.png" alt="有效路径会有下划线" title="有效路径会有下划线">  </p>
 <h4 id="自动建议-和-补全"><a href="#自动建议-和-补全" class="headerlink" title="自动建议 和 补全"></a>自动建议 和 补全</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令</span></span><br><span class="line"><span class="comment"># 参数</span></span><br><span class="line"><span class="comment"># 路径</span></span><br><span class="line"><span class="comment"># Git 分支</span></span><br></pre></td></tr></table></figure>
 <p>采纳建议，可以按 → 或 Control + F。如果只采纳一部分，可以按 Alt + →。</p>
 <p>按 Tab 自动补全，如果有多个可能的结果，Fish 会把它们都列出，还带有简要介绍。再按一次 tab，就可以在这些命令之中选择。</p>
@@ -568,7 +568,7 @@
 <p>Fish 还提供 Web 界面配置该文件：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ fish_config</span><br></pre></td></tr></table></figure>
 <p>输入上面的命令以后，浏览器就会自动打开本机的 8000 端口，用户可以在网页上对 Fish 进行配置，比如选择提示符和配色主题。按回车结束配置。</p>
-<p><img src="http://ogudt6aal.bkt.clouddn.com/image/fish3.png" alt="本机的 8000 端口对 Fish 进行配置" title="本机的 8000 端口对 Fish 进行配置">  </p>
+<p><img src="http://51world.win/pic_flow/2017/2017070224.png" alt="本机的 8000 端口对 Fish 进行配置" title="本机的 8000 端口对 Fish 进行配置">  </p>
 <hr>
 <h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><p><a href="http://51world.win/2017/08/05/code/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Linux%E6%8C%87%E4%BB%A4%E5%85%A5%E9%97%A8/" title="给小白看的 Linux 指令" target="_blank" rel="noopener">给小白看的 Linux 指令</a></p>
 
@@ -966,7 +966,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2019-02-20</span>
+  <span itemprop="copyrightYear">2019-02-21</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
